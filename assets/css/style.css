@@ -2,20 +2,16 @@
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-}
-
 body {
-  margin: auto;
+  height: 100%;
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 16px;
   color: #777777;
   background-image: url('../images/pattern1.jpg');
-  /*background-size: cover;*/
-  min-height: 100%;
-  position: relative;
-  padding-bottom: 50px;
+}
+
+#headerPlusBody {
+  min-height: calc(100vh - 70px);
 }
 
 #topRow {
@@ -96,7 +92,7 @@ h3 {
 #contentContainer {
   clear: both;
   padding-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .content {
@@ -110,7 +106,7 @@ h3 {
   padding: 0 25px 25px 25px;
   text-align: left;
   line-height: 22px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .mainBodyCaption {
@@ -319,9 +315,8 @@ footer {
   color: #999999;
   font-size: 12px;
   padding: 30px;
-  position: absolute;
-  bottom: 0;
   height: 50px;
   width: 100%;
   text-align: center;
+  margin-top: -20px;
 }
